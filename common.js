@@ -152,7 +152,7 @@ function newsCard(n) {
 }
 function videoCard(v) {
   return `<button class="vcard reveal" type="button" data-yt="${v.id || v}">
-    <div class="vcard-img"><img src="https://i.ytimg.com/vi/${v.id || v}/hqdefault.jpg" alt="" loading="lazy"><span class="vcard-play"></span></div>
+    <div class="vcard-img"><img src="img/yt/${v.id || v}.jpg" alt="" loading="lazy"><span class="vcard-play"></span></div>
     ${v.title ? `<h3>${esc(v.title)}</h3><p>${esc(v.by)}</p>` : ""}
   </button>`;
 }

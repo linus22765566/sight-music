@@ -182,7 +182,7 @@ function cardViewer() {
           <span><b>${esc(T.tour[s.id].title)}</b><small>${d.year}.${d.mon} ${d.day} · ${past ? t("past") : esc(T.tour[s.id].venue)}</small></span></a>`;
       }).join("")}</div>` : `<p class="vi-none">${t("no_shows")}</p>`}
       ${p.videos.length ? `<h3>${t("watch_videos")}</h3><div class="vi-videos">${p.videos.slice(0, 4).map((id) =>
-        `<button type="button" data-yt="${id}"><img src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" loading="lazy"><span class="vcard-play"></span></button>`).join("")}</div>` : ""}
+        `<button type="button" data-yt="${id}"><img src="img/yt/${id}.jpg" alt="" loading="lazy"><span class="vcard-play"></span></button>`).join("")}</div>` : ""}
       <div class="vi-actions">
         ${p.artist ? `<a class="btn btn-gold" href="${href("artist.html", p.artist)}">${t("artist_page")}</a>` : ""}
         ${p.news ? `<a class="btn btn-ghost" href="${href("news.html", p.news)}">${t("read_article")}</a>` : ""}

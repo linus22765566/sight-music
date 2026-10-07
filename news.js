@@ -15,7 +15,7 @@
   for (const b of blocks) {
     if (b.t === "li") { list = (list || "") + `<li>${br(b.x)}</li>`; continue; }
     flush();
-    if (b.t === "video") html += `<button class="n-video" type="button" data-yt="${esc(b.x)}"><img src="https://i.ytimg.com/vi/${esc(b.x)}/hqdefault.jpg" alt="" loading="lazy"><span class="vcard-play"></span></button>`;
+    if (b.t === "video") html += `<button class="n-video" type="button" data-yt="${esc(b.x)}"><img src="img/yt/${esc(b.x)}.jpg" alt="" loading="lazy"><span class="vcard-play"></span></button>`;
     else if (/^h[1-6]$/.test(b.t)) { const lv = Math.max(2, Math.min(4, +b.t[1])); html += `<h${lv}>${br(b.x)}</h${lv}>`; }
     else if (b.t === "blockquote") html += `<blockquote>${br(b.x)}</blockquote>`;
     else html += `<p>${br(b.x)}</p>`;
