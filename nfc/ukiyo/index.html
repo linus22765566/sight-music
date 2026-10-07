@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d0f14">
+<title>浮生浮世 Ukiyo｜SIGHT MUSIC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="topbar">
+  <button id="brand" aria-label="回到頂端"><img src="img/logo.png" alt="SIGHT MUSIC"></button>
+</header>
+
+<nav id="tabs">
+  <button class="tab active" data-page="home">首頁</button>
+  <button class="tab" data-page="program">曲目解析</button>
+  <button class="tab" data-page="touch">Musician TOUCH!</button>
+  <button class="tab" data-page="brand">關於品牌</button>
+</nav>
+
+<main>
+
+<!-- ========== 首頁（First View + intro） ========== -->
+<section id="page-home" class="page active">
+  <div class="hero">
+    <img src="img/hero.jpg" alt="浮生浮世主視覺">
+    <img class="hero-title-ink" src="img/title.png" alt="浮生浮世 Ukiyo">
+    <div class="hero-fade"></div>
+  </div>
+  <div class="intro">
+    <img class="sponsors" src="img/sponsors.png" alt="Sponsored by 國家文化藝術基金會・Supervising Organization 高雄市政府文化局・SIGHT TICKET 縱觀藝術售票系統・SIGHT MUSIC・TOKYO KOSEI WIND ORCHESTRA">
+    <img class="tagline" src="img/tagline.png" alt="東京佼成管樂團 × 陳冠豪　在浮生喧囂中演奏人生的曲">
+    <p class="scroll-hint">SCROLL<span class="arrow">↓</span></p>
+  </div>
+
+  <!-- 演出者（Slider）：與首頁合併為同一頁，主視覺往下滑就是樂團介紹 -->
+  <div class="artist-block">
+    <h2>參與人員介紹 <span class="en">About the Artist</span></h2>
+    <div class="dots" id="artist-dots"></div>
+    <p class="hint">← 左右滑動切換 →</p>
+    <div class="slider" id="artist-slider">
+      <article class="slide">
+        <img src="img/ensemble.jpg" alt="東京佼成管樂團">
+        <h3>東京佼成管樂團 <span class="role">Tokyo Kosei Wind Orchestra</span></h3>
+        <p>東京佼成管樂團於1960年5月以「佼成吹奏樂團」成立，1973年更名為「東京佼成管樂團」，並自2022年4月起以「一般社團法人東京佼成管樂團」名義持續運作，是日本最具代表性的職業管樂團之一。</p>
+        <p>2024年4月起，由大井剛史擔任第六任常任指揮，中橋愛生擔任樂藝員；桂冠指揮為佛瑞德里克・費奈爾，特別客席指揮為托馬斯・桑德林，首席客席指揮為飯森範親。</p>
+        <p>樂團演出曲目涵蓋吹奏樂原創作品、古典改編、流行及跨界音樂等多元風格，以卓越的音樂藝術性深受各地觀眾喜愛，並透過大量錄音與媒體演出，持續推動吹奏樂文化的提升、普及與發展。</p>
+        <div class="roster">
+          <p class="roster-title">團員名單</p>
+          <p><span>指揮</span><span class="names"><i class="nm">大井剛史</i></span></p>
+          <p><span>Picc.</span><span class="names"><i class="nm">丸田悠太</i></span></p>
+          <p><span>Fl.</span><span class="names"><i class="nm">白戸美帆</i>、<i class="nm">坂本伽耶</i></span></p>
+          <p><span>Ob.</span><span class="names"><i class="nm">大庭蓉子</i>、<i class="nm">桜田昌子</i></span></p>
+          <p><span>E. Hn.</span><span class="names"><i class="nm">藤原博司</i></span></p>
+          <p><span>Fg.</span><span class="names"><i class="nm">柿沼麻美</i>、<i class="nm">垣内紀子</i>、<i class="nm">大内洋介</i></span></p>
+          <p><span>Es Cl.</span><span class="names"><i class="nm">松生知子</i></span></p>
+          <p><span>B♭Cl. 1st</span><span class="names"><i class="nm">野田祐太郎</i>、<i class="nm">林裕子</i>、<i class="nm">近野千昌</i></span></p>
+          <p><span>B♭Cl. 2nd</span><span class="names"><i class="nm">大浦綾子</i>、<i class="nm">河西拓也</i>、<i class="nm">森卓也</i></span></p>
+          <p><span>B♭Cl. 3rd</span><span class="names"><i class="nm">徳武敦</i>、<i class="nm">後藤榛花</i>、<i class="nm">小野寺緑</i></span></p>
+          <p><span>A. Cl.</span><span class="names"><i class="nm">石田勝</i></span></p>
+          <p><span>B. Cl.</span><span class="names"><i class="nm">泊明里</i></span></p>
+          <p><span>CB. Cl.</span><span class="names"><i class="nm">佐藤義人</i></span></p>
+          <p><span>A. Sax</span><span class="names"><i class="nm">林田祐和</i>、<i class="nm">五十嵐健太</i></span></p>
+          <p><span>T. Sax</span><span class="names"><i class="nm">松井宏幸</i></span></p>
+          <p><span>B. Sax</span><span class="names"><i class="nm">栃尾克樹</i></span></p>
+          <p><span>Tp.</span><span class="names"><i class="nm">奥山泰三</i>、<i class="nm">河原史弥</i>、<i class="nm">講崎里穂</i>、<i class="nm">佐藤成美</i>、<i class="nm">瀬戸口茜</i>、<i class="nm">中嶋尚也</i></span></p>
+          <p><span>Hn.</span><span class="names"><i class="nm">堀風翔</i>、<i class="nm">小助川大河</i>、<i class="nm">小山千鶴</i>、<i class="nm">藤井春香</i></span></p>
+          <p><span>Tb.</span><span class="names"><i class="nm">石村源海</i>、<i class="nm">岩石茉奈</i>、<i class="nm">上田愛香</i></span></p>
+          <p><span>B. Tb.</span><span class="names"><i class="nm">恵藤康充</i></span></p>
+          <p><span>Euph.</span><span class="names"><i class="nm">岩黒綾乃</i>、<i class="nm">佐藤悠光</i></span></p>
+          <p><span>Tuba</span><span class="names"><i class="nm">池田侑太</i>、<i class="nm">中山彰</i></span></p>
+          <p><span>Cb.</span><span class="names"><i class="nm">前田芳彰</i></span></p>
+          <p><span>Timp.</span><span class="names"><i class="nm">坂本雄希</i></span></p>
+          <p><span>Perc.</span><span class="names"><i class="nm">和田光世</i>、<i class="nm">大河原渉</i>、<i class="nm">久米彩音</i>、<i class="nm">古賀優</i>、<i class="nm">武山芳史</i>、<i class="nm">土屋吉弘</i>、<i class="nm">三橋敦</i></span></p>
+          <p><span>Harp</span><span class="names"><i class="nm">安井わかな</i></span></p>
+          <p><span>Pf.</span><span class="names"><i class="nm">神原颯大</i></span></p>
+          <p><span>事務職員</span><span class="names"><i class="nm">勝川本久</i>、<i class="nm">篠原華</i>、<i class="nm">佐原由起</i>、<i class="nm">梅津敦</i>、<i class="nm">森奈那子</i>、<i class="nm">古畑玲</i></span></p>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="img/conductor.jpg" alt="大井剛史">
+        <h3>大井剛史 <span class="role">指揮｜東京佼成管樂團常任指揮</span></h3>
+        <p>17歲起師事松尾葉子學習指揮。畢業於東京藝術大學指揮科，並完成該校研究所指揮專業課程，曾接受若杉弘、岩城宏之等名家指導。1996年獲頒安宅賞。其後於瑞士、義大利各地舉辦的夏季大師班中，接受 Levine、Masur、Gelmetti、Carapchevsky 等指揮家指導。</p>
+        <p>2007年至2009年間於捷克愛樂管弦樂團研修。2008年於Antonio Pedrotti 國際指揮大賽獲得第二名。在學期間即於東京二期會、新國立劇場等歌劇製作中擔任助理指揮，並於2002年指揮德布西歌劇《佩利亞斯與梅麗桑德》正式出道。此後除歌劇外，也廣泛參與芭蕾、音樂劇、日本舞踊等各類舞台製作的指揮工作。</p>
+        <p>歷任仙台愛樂管弦樂團助理指揮（2000–2001）、新愛樂管弦樂團千葉（現千葉交響樂團）常任指揮（2009–2016）、山形交響樂團指揮（2009–2013）、同團正指揮（2013–2017），以及東京佼成管樂團正指揮（2014–2024）。此外，也曾指揮日本全國各大主要管弦樂團。</p>
+        <p>其曲目涉獵極為廣泛，以傳統管弦樂及管樂作品為核心，同時涵蓋當代音樂首演、電玩音樂、電影配樂、流行音樂等各種類型。並透過附有導聆談話的音樂會、兒童音樂會等形式，致力於讓更多不同年齡層的觀眾親近並享受音樂。</p>
+        <p>現任東京藝術大學音樂學部器樂科客座教授（管樂）、尚美音樂學院專門學校客座教授。</p>
+      </article>
+      <article class="slide">
+        <img src="img/chen.jpg" alt="陳冠豪">
+        <h3>陳冠豪 <span class="role">法國號音樂家</span></h3>
+        <p>臺灣新生代具代表性的法國號演奏家，現任高雄市交響樂團法國號首席。畢業於舊金山音樂院（San Francisco Conservatory of Music），求學期間曾擔任舊金山青年交響樂團法國號首席，並於2015年隨團展開歐洲巡演，以馬勒《第五號交響曲》中的法國號獨奏，登上柏林愛樂音樂廳、阿姆斯特丹皇家音樂廳等重要舞台，其演奏獲當地樂評高度肯定。</p>
+        <p>旅美期間考取蘇州交響樂團，於2016至2018年間任職，並曾與 <i class="nm">Anne-Sophie Mutter</i>、<i class="nm">Xavier de Maistre</i>、譚盾等國際音樂家合作。返臺後持續活躍於職業樂團舞台，曾受邀與國家交響樂團、國立臺灣交響樂團、臺北市立交響樂團等合作，並以獨奏家身分演出多部法國號經典及當代作品。</p>
+        <p>除演奏之外，陳冠豪亦長期投入音樂教育與法國號推廣，現兼任高雄師範大學講師、南臺灣法國號重奏團團長，透過音樂會、大師班及音樂營等形式，持續拓展南臺灣法國號演奏與教育能量。</p>
+      </article>
+      <article class="slide">
+        <img src="img/host1.jpg" alt="邢子青" style="object-fit: contain">
+        <h3>邢子青 <span class="role">主持人</span></h3>
+        <p>臺灣資深廣播節目主持人、製作人及古典音樂導聆人。出身法律學院，後跨足廣播領域，長期服務於愛樂電台（Philharmonic Radio），曾任資深節目製作及主持人，以自然感性的主持風格、精緻選曲與溫暖沉穩的嗓音深受聽眾喜愛，主持《早安，愛樂！》、《台北歌劇院》等古典音樂節目逾20年。</p>
+        <p>廣播生涯中曾榮獲新聞局「廣播電視社會建設獎」、文建會「廣播文化獎優良文化節目」佳作獎，並多次入圍廣播金鐘獎節目及主持人獎項，亦曾受邀擔任金鼎獎、廣播金鐘獎評審委員。</p>
+        <p>除廣播工作外，邢子青長年活躍於古典音樂推廣與現場演出，曾與國家交響樂團、臺北市立交響樂團、國家國樂團、臺北市立國樂團、臺北愛樂等團隊合作，並於公共電視、中國電視公司主持歌劇導聆節目。多年來亦持續擔任國家兩廳院、衛武營等藝文場館之音樂導聆與講座主講人；自2021年起與國家交響樂團合作製播 Podcast，以深入而親切的方式，持續拉近古典音樂與大眾之間的距離。</p>
+      </article>
+      <article class="slide">
+        <img src="img/host3.jpg" alt="佐藤淳一" style="object-fit: contain">
+        <h3>佐藤淳一 <span class="role">薩克斯風音樂家｜曲目解析</span></h3>
+        <p>出生於日本千葉縣。畢業於洗足學園音樂大學，並以首席成績完成該校大學院管打樂器專攻碩士課程，之後取得東京藝術大學大學院音樂研究科博士學位，成為日本首位於薩克斯風領域取得博士學位的音樂家。</p>
+        <p>在學期間即展開演奏活動，並獲東京藝術大學推薦，於「奏樂堂出道音樂會系列」舉行個人獨奏會，正式以獨奏家身分出道。曾受邀參與東京歌劇城文化財團主辦的「B→C獨奏會」，並在多個基金會及文化團體的資助下，持續舉辦多場個人獨奏會。</p>
+        <p>其演奏足跡遍及歐洲、北美及亞洲各國。2024年受邀擔任亞太薩克斯風學院講師，並於音樂節盛會音樂會中擔任獨奏，與RSU管弦樂團合作演出。此外，他亦獲選為第20屆世界薩克斯風大會協奏曲獨奏家，與哈爾濱交響樂團合作，在中國首演坂田直樹的作品《被偷走的地平線》。</p>
+        <p>除演奏活動外，他亦曾於巴黎國立高等音樂舞蹈學院、紐約曼哈頓音樂學院、蒙特克萊爾州立大學、國立臺北藝術大學、東京藝術大學及大阪音樂大學等日本國內外大學與音樂院，舉辦多場大師班、講座及音樂會。</p>
+        <p>現任北海道教育大學旭川校副教授，並兼任岩見澤校講師；同時擔任札幌大谷大學及北翔大學兼任講師。為 Selmer 藝術家。</p>
+        <p><a href="http://saxolab.net" target="_blank" rel="noopener">官方網站　saxolab.net</a></p>
+      </article>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="fab" aria-label="回到首頁頂端">↑</button>
+</section>
+
+<!-- ========== 曲目解析（翻書） ========== -->
+<section id="page-program" class="page">
+  <h2>曲目解析 <span class="en">About the Program</span></h2>
+  <div class="toolbar">
+    <div class="font-size">
+      <button id="font-minus" aria-label="縮小文字">A−</button>
+      <button id="font-plus" aria-label="放大文字">A＋</button>
+    </div>
+  </div>
+  <div class="book" id="book">
+    <div class="book-page" id="book-content"></div>
+    <button class="book-nav prev" id="book-prev" aria-label="上一頁"></button>
+    <button class="book-nav next" id="book-next" aria-label="下一頁"></button>
+  </div>
+  <div class="book-footer">
+    <span id="book-pos"></span>
+    <span class="hint">點擊左右邊緣翻頁</span>
+  </div>
+</section>
+
+<!-- ========== Musician TOUCH ========== -->
+<section id="page-touch" class="page">
+  <h2>Musician TOUCH!</h2>
+  <p class="quote">「輕觸，開啟無限可能。」</p>
+  <p class="body-text">輕觸手機，透過 NFC 感應，即可接收本場次的完整節目資訊。透過電子節目手冊，將你喜歡的音樂家收藏在手。</p>
+  <div class="carousel" aria-label="本場音樂會 NFC 卡片">
+    <div class="car-track" id="car-track-2"></div>
+  </div>
+  <div class="carousel" aria-label="精彩回顧 NFC 卡片">
+    <div class="car-track" id="car-track-1"></div>
+  </div>
+  <p class="hint">點擊卡片，手指拖曳可 3D 翻面檢視</p>
+</section>
+
+<!-- ========== 關於品牌 ========== -->
+<section id="page-brand" class="page">
+  <h2>關於品牌 <span class="en">SIGHT INTERNATIONAL</span></h2>
+  <div class="brand-text">
+    <p>縱觀藝術成立於2020年，致力於推動臺灣音樂演藝產業國際化。</p>
+    <p>2023年，縱觀藝術於荷蘭設立海外分公司，並持續規劃拓展日本及中國市場，逐步建立國際合作與營運網絡。</p>
+    <p>近年來，業務逐步拓展至演藝經紀、國際節目策劃、藝人公關及音樂產品代理，持續促進臺灣與國際音樂產業之間的交流與合作。</p>
+    <p>2025年，縱觀藝術與東京佼成管樂團簽訂臺灣地區業務代理合作，並陸續與國際音樂家及團體 Nikita Zimin、松下洋、Moscow Saxophone Quartet、Brian Liao 等簽訂全球代理合作契約，正式邀請其加入 SIGHT Artist 行列。</p>
+    <p>此外，縱觀藝術亦與多個國際音樂品牌建立合作關係，引進 AR Resonance、STEUER 等專業音樂品牌。</p>
+    <p class="brand-sub">重要活動</p>
+    <p class="brand-events">2024年｜舉辦 SIGHT MUSIC 臺灣國際音樂營<br>2025年｜成為 AR Resonance 品牌臺灣區總代理<br>2025年｜擔任世界薩克斯風年會協辦單位<br>2025年｜成為東京佼成管樂團臺灣地區業務代理</p>
+  </div>
+  <a href="https://www.sight-ec.com/" target="_blank" rel="noopener">
+    <img class="full-img" loading="lazy" src="img/collection.jpg" alt="SIGHT COLLECTION — 前往線上商店">
+  </a>
+  <img class="brand-logo" src="img/logo.png" alt="SIGHT MUSIC">
+  <a class="ticket-link" href="https://ticket.sight-music.com/" target="_blank" rel="noopener">SIGHT TICKET 售票網站</a>
+  <div class="social">
+    <a href="https://www.facebook.com/SIGHT.0721" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/sight_international/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 4.5c2.4 0 2.7 0 3.7.1 1 0 1.5.2 1.9.3.5.2.8.4 1.1.7.3.3.5.6.7 1.1.1.4.3.9.3 1.9.1 1 .1 1.3.1 3.7s0 2.7-.1 3.7c0 1-.2 1.5-.3 1.9-.2.5-.4.8-.7 1.1-.3.3-.6.5-1.1.7-.4.1-.9.3-1.9.3-1 .1-1.3.1-3.7.1s-2.7 0-3.7-.1c-1 0-1.5-.2-1.9-.3-.5-.2-.8-.4-1.1-.7-.3-.3-.5-.6-.7-1.1-.1-.4-.3-.9-.3-1.9-.1-1-.1-1.3-.1-3.7s0-2.7.1-3.7c0-1 .2-1.5.3-1.9.2-.5.4-.8.7-1.1.3-.3.6-.5 1.1-.7.4-.1.9-.3 1.9-.3 1-.1 1.3-.1 3.7-.1zM12 3c-2.4 0-2.8 0-3.7.1-1 0-1.6.2-2.2.4-.6.2-1.1.6-1.6 1-.5.5-.8 1-1 1.6-.2.6-.4 1.2-.4 2.2C3 9.2 3 9.6 3 12s0 2.8.1 3.7c0 1 .2 1.6.4 2.2.2.6.6 1.1 1 1.6.5.5 1 .8 1.6 1 .6.2 1.2.4 2.2.4.9.1 1.3.1 3.7.1s2.8 0 3.7-.1c1 0 1.6-.2 2.2-.4.6-.2 1.1-.6 1.6-1 .5-.5.8-1 1-1.6.2-.6.4-1.2.4-2.2.1-.9.1-1.3.1-3.7s0-2.8-.1-3.7c0-1-.2-1.6-.4-2.2-.2-.6-.6-1.1-1-1.6-.5-.5-1-.8-1.6-1-.6-.2-1.2-.4-2.2-.4C14.8 3 14.4 3 12 3zm0 4.4a4.6 4.6 0 100 9.2 4.6 4.6 0 000-9.2zM12 15a3 3 0 110-6 3 3 0 010 6zm5.9-7.8a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/></svg>
+    </a>
+    <a href="https://line.me/R/ti/p/@836pqtzr?oat_content=url&ts=09172036" target="_blank" rel="noopener" aria-label="LINE">
+      <svg viewBox="0 0 24 24"><path d="M12 3.5c-5 0-9 3.3-9 7.3 0 3.6 3.2 6.6 7.5 7.2.3.1.7.2.8.5.1.2 0 .6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3c1.3-1.4 1.9-2.8 1.9-4.5 0-4-4-7.3-9-7.3zM8.1 13.1H6.3a.5.5 0 01-.5-.5V9.1a.5.5 0 011 0v3h1.3a.5.5 0 010 1zm1.9-.5a.5.5 0 01-1 0V9.1a.5.5 0 011 0v3.5zm4.3 0a.5.5 0 01-.9.3l-1.8-2.5v2.2a.5.5 0 01-1 0V9.1a.5.5 0 01.9-.3l1.8 2.5V9.1a.5.5 0 011 0v3.5zm2.9-2.3a.5.5 0 010 1h-1.3v.8h1.3a.5.5 0 010 1h-1.8a.5.5 0 01-.5-.5V9.1a.5.5 0 01.5-.5h1.8a.5.5 0 010 1h-1.3v.7h1.3z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@SIGHT_International" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12c0 1.6.1 3.2.4 4.8a2.5 2.5 0 001.8 1.8c1.5.4 7.8.4 7.8.4s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8c.3-1.6.4-3.2.4-4.8s-.1-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg>
+    </a>
+  </div>
+  <footer>COPYRIGHT © 2026 SIGHT MUSIC Inc.</footer>
+</section>
+
+</main>
+
+<!-- 卡片 3D 檢視器 -->
+<div id="card-viewer" class="viewer" hidden>
+  <div class="viewer-backdrop" id="viewer-backdrop"></div>
+  <div class="viewer-stage">
+    <div class="card3d" id="card3d">
+      <img class="face front" id="face-front" alt="卡片正面">
+      <img class="face back" src="img/card-back.jpg" alt="卡片背面">
+      <span class="ply" style="--i:-0.35"></span>
+      <span class="ply" style="--i:-0.17"></span>
+      <span class="ply" style="--i:0"></span>
+      <span class="ply" style="--i:0.17"></span>
+      <span class="ply" style="--i:0.35"></span>
+    </div>
+  </div>
+  <button class="viewer-close" id="viewer-close" aria-label="關閉">×</button>
+  <p class="viewer-hint">拖曳左右翻轉　・　點擊空白處關閉</p>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

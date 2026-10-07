@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d0f14">
+<title>說書人 A Teller of Tales｜SIGHT MUSIC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="topbar">
+  <button id="brand" aria-label="回到頂端"><img src="img/logo.png" alt="SIGHT MUSIC"></button>
+</header>
+
+<nav id="tabs">
+  <button class="tab active" data-page="home">首頁</button>
+  <button class="tab" data-page="program">曲目解析</button>
+  <button class="tab" data-page="touch">Musician TOUCH！</button>
+  <button class="tab" data-page="brand">關於品牌</button>
+</nav>
+
+<main>
+
+<!-- ========== 首頁（First View + intro） ========== -->
+<section id="page-home" class="page active">
+  <div class="hero">
+    <img src="img/hero.jpg" alt="說書人主視覺">
+    <div class="hero-text">
+      <img class="hero-title" src="img/title.png" alt="說書人 A Teller of Tales">
+    </div>
+  </div>
+  <div class="intro">
+    <img class="sponsors" src="img/sponsors.png" alt="SIGHT TICKET 縱觀藝術售票系統・SIGHT MUSIC・KOSEI WIND・Moscow Saxophone Quartet">
+    <p class="allworks">東京佼成管樂團 Ｘ 侯宇彪　説一段，被傳承下來的聲音</p>
+    <p class="quote">「一曲聲歇成往事；一聲再起續傳承。」</p>
+    <p class="showdate">7.24 FRI. 19:30　臺北國家兩廳院音樂廳</p>
+    <p class="scroll-hint">SCROLL<span class="arrow">↓</span></p>
+  </div>
+
+  <!-- 演出者（Slider）：與首頁合併為同一頁，主視覺往下滑就是樂團介紹 -->
+  <div class="artist-block">
+    <h2>參與人員介紹 <span class="en">About the Artist</span></h2>
+    <div class="dots" id="artist-dots"></div>
+    <p class="hint">← 左右滑動切換 →</p>
+    <div class="slider" id="artist-slider">
+      <article class="slide">
+        <img src="img/ensemble.jpg" alt="東京佼成管樂團">
+        <h3>東京佼成管樂團 <span class="role">Tokyo Kosei Wind Orchestra</span></h3>
+        <p>東京佼成管樂團於1960年5月以「佼成吹奏樂團」成立，1973年更名為「東京佼成管樂團」，並自2022年4月起以「一般社團法人東京佼成管樂團」名義持續運作，是日本最具代表性的職業管樂團之一。</p>
+        <p>2024年4月起，由大井剛史擔任第六任常任指揮，中橋愛生擔任樂藝員；桂冠指揮為佛瑞德里克・費奈爾，特別客席指揮為托馬斯・桑德林，首席客席指揮為飯森範親。</p>
+        <p>樂團演出曲目涵蓋吹奏樂原創作品、古典改編、流行及跨界音樂等多元風格，以卓越的音樂藝術性深受各地觀眾喜愛，並透過大量錄音與媒體演出，持續推動吹奏樂文化的提升、普及與發展。</p>
+        <div class="roster">
+          <p class="roster-title">團員名單</p>
+          <p><span>指揮</span>大井剛史</p>
+          <p><span>樂團首席</span>林裕子</p>
+          <p><span>Picc.</span>工藤美幸（Fl）</p>
+          <p><span>Fl.</span>坂本伽耶、白戸美帆、西岡あかね、東佳音</p>
+          <p><span>Ob.</span>石井智章、笹平幸那</p>
+          <p><span>E. Hn.</span>藤原博司</p>
+          <p><span>Fg.</span>柿沼麻美、栗林愛理</p>
+          <p><span>C. Fg.</span>君塚広明</p>
+          <p><span>Es Cl.</span>松生知子</p>
+          <p><span>B♭Cl.</span>林裕子*、本田有里恵、浦畑尚吾、野田祐太郎、後藤榛花、近野千昌、徳武敦、河西拓也、小野寺綠</p>
+          <p><span>B. Cl.</span>泊明里、森卓也</p>
+          <p><span>CB. Cl.</span>草野裕輝</p>
+          <p><span>Sax</span>都築惇、江川良子、宮越敦士、本堂誠</p>
+          <p><span>Tp.</span>河原史弥、閏間健太、川村大、後藤慎介、富岡彩乃、依田泰幸</p>
+          <p><span>Hn.</span>堀風翔、小山千鶴、佐藤文香、藤井春香、山下裕也</p>
+          <p><span>Tb.</span>今村岳志、安久津理子、竹内優彦、山内正博</p>
+          <p><span>B. Tb.</span>恵藤康充</p>
+          <p><span>Euph.</span>岩黒綾乃、大山智</p>
+          <p><span>Tuba</span>池田侑太、松本匡偉</p>
+          <p><span>Cb.</span>前田芳彰</p>
+          <p><span>Timp.</span>越中亮太</p>
+          <p><span>Perc.</span>石川大樹、岩下美香、柴原誠、西久保友広、二ツ木千由紀、松下真也、山本貢大、定成庸治</p>
+          <p><span>Harp</span>神谷朝子</p>
+          <p><span>Pf.</span>神原颯大</p>
+          <p><span>事務職員</span>篠原華、勝川本久、梅津敦、森奈那子、古畑玲、佐原由起</p>
+          <p class="roster-note">* 樂團首席</p>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="img/conductor.jpg" alt="侯宇彪">
+        <h3>侯宇彪 <span class="role">指揮｜管樂界的說書人</span></h3>
+        <p>台灣管樂界重要推手侯宇彪，現任台北青年管樂團藝術總監。數十年投入指揮、教育與推廣，見證並引領台灣管樂文化的傳承與發展。長年致力於管樂教育、演奏推廣與人才培育，對台灣管樂發展具有深遠影響。憑藉豐富的教學與舞台經驗，持續推動國內管樂文化扎根與國際交流，為台灣管樂界重要的領航人物之一。</p>
+      </article>
+      <article class="slide">
+        <img src="img/quartet.jpg" alt="莫斯科薩克斯風四重奏">
+        <h3>莫斯科薩克斯風四重奏 <span class="role">Moscow Saxophone Quartet｜響徹極北雪域的頂尖之音</span></h3>
+        <p>莫斯科薩克斯風四重奏由 Nikita Zimin 等四位國際間獲獎無數的頂尖音樂家組成，融合豐富經驗的權威與新銳，展現兼具傳承與創新的聲音。演出曲目涵蓋巴洛克至當代，將古典與現代作品交織重現並以細膩改編及默契合奏賦予薩克斯風新生命。每次登台皆以絕妙音色、精確節奏與情感張力展現俄羅斯薩克斯風藝術頂尖水準。</p>
+      </article>
+      <article class="slide">
+        <img src="img/alexander.jpg" alt="Alexander Kuzavov" style="object-fit: contain">
+        <h3>Alexander Kuzavov <span class="role">小提琴｜編曲</span></h3>
+        <p>出生於莫斯科，畢業於莫斯科柴可夫斯基音樂學院，師事著名小提琴家 Marina Yashvili 教授，並以優異成績完成研究所學業。</p>
+        <p>曾榮獲俄羅斯、斯洛維尼亞及突尼西亞等多項國際小提琴比賽與音樂節獎項，包括斯洛維尼亞 Bled 國際小提琴大賽首獎及 EMCY 特別獎。自 2011 年起任職於 Mosconcert，並於肖邦音樂學院擔任教師。</p>
+        <p>Kuzavov 活躍於獨奏、室內樂與編曲領域，現為 Noir、4bows 與 Artfonix 弦樂四重奏，以及 Cinematica Ensemble 的成員。自 2011 年起，他亦致力於編曲創作，曾與 Moscow Saxophone Quartet、Marimba Plus、Imperialis Orchestra、Simple Music Orchestra 等知名團體合作，作品廣受演奏家採用。</p>
+        <p>除演奏與創作外，他亦長期投入教學，培育出多位國際比賽得獎者，並持續於俄羅斯及海外舉辦獨奏與室內樂演出。</p>
+      </article>
+      <article class="slide">
+        <img src="img/host3.jpg" alt="佐藤淳一" style="object-fit: contain">
+        <h3>佐藤淳一 <span class="role">薩克斯風音樂家｜曲目解析</span></h3>
+        <p>出生於日本千葉縣。畢業於洗足學園音樂大學，並以首席成績完成該校大學院管打樂器專攻碩士課程，之後取得東京藝術大學大學院音樂研究科博士學位，成為日本首位於薩克斯風領域取得博士學位的音樂家。</p>
+        <p>在學期間即展開演奏活動，並獲東京藝術大學推薦，於「奏樂堂出道音樂會系列」舉行個人獨奏會，正式以獨奏家身分出道。曾受邀參與東京歌劇城文化財團主辦的「B→C獨奏會」，並在多個基金會及文化團體的資助下，持續舉辦多場個人獨奏會。</p>
+        <p>其演奏足跡遍及歐洲、北美及亞洲各國。2024年受邀擔任亞太薩克斯風學院講師，並於音樂節盛會音樂會中擔任獨奏，與RSU管弦樂團合作演出。此外，他亦獲選為第20屆世界薩克斯風大會協奏曲獨奏家，與哈爾濱交響樂團合作，在中國首演坂田直樹的作品《被偷走的地平線》。</p>
+        <p>除演奏活動外，他亦曾於巴黎國立高等音樂舞蹈學院、紐約曼哈頓音樂學院、蒙特克萊爾州立大學、國立臺北藝術大學、東京藝術大學及大阪音樂大學等日本國內外大學與音樂院，舉辦多場大師班、講座及音樂會。</p>
+        <p>現任北海道教育大學旭川校副教授，並兼任岩見澤校講師；同時擔任札幌大谷大學及北翔大學兼任講師。為 Selmer 藝術家。</p>
+        <p><a href="http://saxolab.net" target="_blank" rel="noopener">官方網站　saxolab.net</a></p>
+      </article>
+      <article class="slide">
+        <img src="img/host1.jpg" alt="邢子青">
+        <h3>邢子青 <span class="role">節目主持人｜資深媒體人</span></h3>
+        <p>台灣著名的資深廣播節目主持人與製作人，曾長期服務於「愛樂電台（Philharmonic Radio）」，以溫暖沈穩的嗓音主持《早安，愛樂！》、《台北歌劇院》等古典音樂節目逾20年。</p>
+      </article>
+      <article class="slide">
+        <img src="img/host2.jpg" alt="高捷 J Geddes">
+        <h3>高捷（J Geddes） <span class="role">THE STORY 主持人</span></h3>
+        <p>現為 TPO Funk 創辦人及團長及《博恩夜夜秀》音樂總監。曾擔任多位華語音樂頂尖歌手與音樂人的銅管編曲、錄音室樂手，榮獲 2024 金馬獎「最佳主題曲」：《鬼才知道》王若琳作品之管樂編曲。</p>
+      </article>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="fab" aria-label="回到首頁頂端">↑</button>
+</section>
+
+<!-- ========== 曲目解析（翻書） ========== -->
+<section id="page-program" class="page">
+  <h2>曲目解析 <span class="en">About the Program</span></h2>
+  <div class="toolbar">
+    <div class="font-size">
+      <button id="font-minus" aria-label="縮小文字">A−</button>
+      <button id="font-plus" aria-label="放大文字">A＋</button>
+    </div>
+  </div>
+  <div class="book" id="book">
+    <div class="book-page" id="book-content"></div>
+    <button class="book-nav prev" id="book-prev" aria-label="上一頁"></button>
+    <button class="book-nav next" id="book-next" aria-label="下一頁"></button>
+  </div>
+  <div class="book-footer">
+    <span id="book-pos"></span>
+    <span class="hint">點擊左右邊緣翻頁</span>
+  </div>
+</section>
+
+<!-- ========== Musician TOUCH ========== -->
+<section id="page-touch" class="page">
+  <h2>Musician TOUCH！</h2>
+  <p class="quote">「輕觸，開啟無限可能。」</p>
+  <p class="body-text">輕觸手機，透過 NFC 感應，即可接收本場次的完整節目資訊。透過電子節目手冊，將你喜歡的音樂家收藏在手。</p>
+  <div class="carousel" aria-label="本場音樂會 NFC 卡片">
+    <div class="car-track" id="car-track-2"></div>
+  </div>
+  <div class="carousel" aria-label="精彩回顧 NFC 卡片">
+    <div class="car-track" id="car-track-1"></div>
+  </div>
+  <p class="hint">點擊卡片，手指拖曳可 3D 翻面檢視</p>
+</section>
+
+<!-- ========== 關於品牌 ========== -->
+<section id="page-brand" class="page">
+  <h2>關於品牌 <span class="en">SIGHT INTERNATIONAL</span></h2>
+  <div class="brand-text">
+    <p>縱觀藝術成立於2020年，致力於推動臺灣音樂演藝產業國際化。</p>
+    <p>2023年，縱觀藝術於荷蘭設立海外分公司，並持續規劃拓展日本及中國市場，逐步建立國際合作與營運網絡。</p>
+    <p>近年來，業務逐步拓展至演藝經紀、國際節目策劃、藝人公關及音樂產品代理，持續促進臺灣與國際音樂產業之間的交流與合作。</p>
+    <p>2025年，縱觀藝術與東京佼成管樂團簽訂臺灣地區業務代理合作，並陸續與國際音樂家及團體 Nikita Zimin、松下洋、Moscow Saxophone Quartet、Brian Liao 等簽訂全球代理合作契約，正式邀請其加入 SIGHT Artist 行列。</p>
+    <p>此外，縱觀藝術亦與多個國際音樂品牌建立合作關係，引進 AR Resonance、STEUER 等專業音樂品牌。</p>
+    <p class="brand-sub">重要活動</p>
+    <p class="brand-events">2024年｜舉辦 SIGHT MUSIC 臺灣國際音樂營<br>2025年｜成為 AR Resonance 品牌臺灣區總代理<br>2025年｜擔任世界薩克斯風年會協辦單位<br>2025年｜成為東京佼成管樂團臺灣地區業務代理</p>
+  </div>
+  <a href="https://www.sight-ec.com/" target="_blank" rel="noopener">
+    <img class="full-img" src="img/collection.jpg" alt="SIGHT COLLECTION — 前往線上商店">
+  </a>
+  <img class="brand-logo" src="img/logo.png" alt="SIGHT MUSIC">
+  <a class="ticket-link" href="https://ticket.sight-music.com/" target="_blank" rel="noopener">SIGHT TICKET 售票網站</a>
+  <div class="social">
+    <a href="https://www.facebook.com/SIGHT.0721" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/sight_international/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 4.5c2.4 0 2.7 0 3.7.1 1 0 1.5.2 1.9.3.5.2.8.4 1.1.7.3.3.5.6.7 1.1.1.4.3.9.3 1.9.1 1 .1 1.3.1 3.7s0 2.7-.1 3.7c0 1-.2 1.5-.3 1.9-.2.5-.4.8-.7 1.1-.3.3-.6.5-1.1.7-.4.1-.9.3-1.9.3-1 .1-1.3.1-3.7.1s-2.7 0-3.7-.1c-1 0-1.5-.2-1.9-.3-.5-.2-.8-.4-1.1-.7-.3-.3-.5-.6-.7-1.1-.1-.4-.3-.9-.3-1.9-.1-1-.1-1.3-.1-3.7s0-2.7.1-3.7c0-1 .2-1.5.3-1.9.2-.5.4-.8.7-1.1.3-.3.6-.5 1.1-.7.4-.1.9-.3 1.9-.3 1-.1 1.3-.1 3.7-.1zM12 3c-2.4 0-2.8 0-3.7.1-1 0-1.6.2-2.2.4-.6.2-1.1.6-1.6 1-.5.5-.8 1-1 1.6-.2.6-.4 1.2-.4 2.2C3 9.2 3 9.6 3 12s0 2.8.1 3.7c0 1 .2 1.6.4 2.2.2.6.6 1.1 1 1.6.5.5 1 .8 1.6 1 .6.2 1.2.4 2.2.4.9.1 1.3.1 3.7.1s2.8 0 3.7-.1c1 0 1.6-.2 2.2-.4.6-.2 1.1-.6 1.6-1 .5-.5.8-1 1-1.6.2-.6.4-1.2.4-2.2.1-.9.1-1.3.1-3.7s0-2.8-.1-3.7c0-1-.2-1.6-.4-2.2-.2-.6-.6-1.1-1-1.6-.5-.5-1-.8-1.6-1-.6-.2-1.2-.4-2.2-.4C14.8 3 14.4 3 12 3zm0 4.4a4.6 4.6 0 100 9.2 4.6 4.6 0 000-9.2zM12 15a3 3 0 110-6 3 3 0 010 6zm5.9-7.8a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/></svg>
+    </a>
+    <a href="https://line.me/R/ti/p/@836pqtzr?oat_content=url&ts=09172036" target="_blank" rel="noopener" aria-label="LINE">
+      <svg viewBox="0 0 24 24"><path d="M12 3.5c-5 0-9 3.3-9 7.3 0 3.6 3.2 6.6 7.5 7.2.3.1.7.2.8.5.1.2 0 .6 0 .8l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3c1.3-1.4 1.9-2.8 1.9-4.5 0-4-4-7.3-9-7.3zM8.1 13.1H6.3a.5.5 0 01-.5-.5V9.1a.5.5 0 011 0v3h1.3a.5.5 0 010 1zm1.9-.5a.5.5 0 01-1 0V9.1a.5.5 0 011 0v3.5zm4.3 0a.5.5 0 01-.9.3l-1.8-2.5v2.2a.5.5 0 01-1 0V9.1a.5.5 0 01.9-.3l1.8 2.5V9.1a.5.5 0 011 0v3.5zm2.9-2.3a.5.5 0 010 1h-1.3v.8h1.3a.5.5 0 010 1h-1.8a.5.5 0 01-.5-.5V9.1a.5.5 0 01.5-.5h1.8a.5.5 0 010 1h-1.3v.7h1.3z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@SIGHT_International" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12c0 1.6.1 3.2.4 4.8a2.5 2.5 0 001.8 1.8c1.5.4 7.8.4 7.8.4s6.3 0 7.8-.4a2.5 2.5 0 001.8-1.8c.3-1.6.4-3.2.4-4.8s-.1-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg>
+    </a>
+  </div>
+  <footer>COPYRIGHT © 2026 SIGHT MUSIC Inc.</footer>
+</section>
+
+</main>
+
+<!-- 卡片 3D 檢視器 -->
+<div id="card-viewer" class="viewer" hidden>
+  <div class="viewer-backdrop" id="viewer-backdrop"></div>
+  <div class="viewer-stage">
+    <div class="card3d" id="card3d">
+      <img class="face front" id="face-front" alt="卡片正面">
+      <img class="face back" src="img/card-back.jpg" alt="卡片背面">
+      <span class="ply" style="--i:-0.35"></span>
+      <span class="ply" style="--i:-0.17"></span>
+      <span class="ply" style="--i:0"></span>
+      <span class="ply" style="--i:0.17"></span>
+      <span class="ply" style="--i:0.35"></span>
+    </div>
+  </div>
+  <button class="viewer-close" id="viewer-close" aria-label="關閉">×</button>
+  <p class="viewer-hint">拖曳左右翻轉　・　點擊空白處關閉</p>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGHT MUSIC 縱觀藝術</title>
+<meta name="description" content="縱觀藝術成立於 2020 年，致力推動臺灣音樂演藝的國際化。東京佼成管樂團台灣地區代理。">
+<link rel="icon" href="img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Serif:wght@400;600;900&family=Unbounded:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media=\'all\'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Serif:wght@400;600;900&family=Unbounded:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<div class="intro" id="intro">
+  <video src="media/logo-motion.mp4" muted playsinline autoplay preload="auto"></video>
+  <button class="intro-skip" type="button">SKIP</button>
+</div>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <div class="hero-sticky">
+      <div class="hero-type hero-type-top"><span class="eyebrow">SIGHT INTERNATIONAL · SINCE 2020</span></div>
+      <div class="stage" id="stage">
+        <video class="stage-video is-on" muted playsinline preload="auto"></video>
+        <video class="stage-video" muted playsinline preload="auto"></video>
+        <div class="stage-shade"></div>
+        <div class="stage-caption"><span class="dot"></span><span id="stageCaption"></span></div>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-word" data-split>SIGHT</span>
+        <span class="hero-word hero-word-r" data-split>MUSIC</span>
+      </h1>
+      <div class="hero-type hero-type-bottom">
+        <p class="hero-lede" data-h="ui.hero_lede"></p>
+        <a class="scroll-hint" href="#nfc">SCROLL<i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NFC 電子節目冊販售 -->
+  <section class="section nfc-sale" id="nfc">
+    <div class="nfc-grid">
+      <div class="nfc-copy reveal">
+        <span class="eyebrow" data-h="nfc.eyebrow"></span>
+        <h2 data-h="nfc.title"></h2>
+        <p class="nfc-lede" data-h="nfc.lede"></p>
+      </div>
+      <ul class="nfc-features reveal" id="nfcFeatures"></ul>
+    </div>
+    <div class="nfc-wall reveal" id="nfcWall"></div>
+    <div class="nfc-price reveal">
+      <div><b data-h="nfc.price"></b><p data-h="nfc.price_note"></p></div>
+      <div class="nfc-cta">
+        <a class="btn btn-gold" id="nfcMail" data-h="nfc.cta_mail"></a>
+        <a class="btn btn-ghost" id="nfcLine" target="_blank" rel="noopener" data-h="nfc.cta_line"></a>
+      </div>
+    </div>
+    <div class="nfc-cases reveal">
+      <span class="eyebrow" data-h="nfc.demo_title"></span>
+      <div class="nfc-case-list" id="nfcCases"></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+  <section class="section tour" id="tour">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-h="home.tour_eyebrow"></span>
+      <h2 data-h="home.tour_title"></h2>
+      <p data-h="home.tour_lede"></p>
+    </div>
+    <div class="tour-list" id="tourList"></div>
+  </section>
+
+  <section class="section watch" id="watch">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-h="home.watch_eyebrow"></span>
+      <h2 data-h="home.watch_title"></h2>
+    </div>
+    <div class="watch-grid">
+      <figure class="watch-feature reveal">
+        <video src="media/tkwo-promo.mp4" muted playsinline loop autoplay preload="metadata"></video>
+        <figcaption><span data-h="home.watch_feature"></span><br><small data-h="home.watch_feature_sub"></small></figcaption>
+      </figure>
+      <div class="watch-list" id="watchList"></div>
+    </div>
+  </section>
+
+  <section class="section artists" id="artists">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-h="home.artists_eyebrow"></span>
+      <h2 data-h="home.artists_title"></h2>
+    </div>
+    <div class="artist-grid" id="artistGrid"></div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="about-quote reveal">
+      <span class="eyebrow" data-h="home.about_eyebrow"></span>
+      <blockquote data-h="home.about_quote"></blockquote>
+      <p data-h="home.about_text"></p>
+    </div>
+    <ol class="phases" id="phases"></ol>
+    <div class="brands reveal">
+      <span class="eyebrow" data-h="home.brands_eyebrow"></span>
+      <ul><li>AR Resonance</li><li>STEUER</li><li>Parafit</li><li>Sengoku</li></ul>
+    </div>
+  </section>
+
+  <section class="section news" id="news">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-h="home.news_eyebrow"></span>
+      <h2 data-h="home.news_title"></h2>
+    </div>
+    <div class="news-list" id="newsList"></div>
+  </section>
+
+</main>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="nfc-kit.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

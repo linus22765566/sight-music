@@ -1,0 +1,309 @@
+{
+ "ui": {
+  "nav_nfc": "NFC 節目冊",
+  "nav_tour": "節目",
+  "nav_watch": "影音",
+  "nav_artists": "藝術家",
+  "nav_about": "關於縱觀",
+  "nav_news": "最新消息",
+  "nav_contact": "聯絡",
+  "ticket": "購票",
+  "buy_now": "立即購票 →",
+  "past": "已演出",
+  "skip": "SKIP",
+  "scroll": "SCROLL",
+  "hero_lede": "縱觀藝術 — 讓臺灣的舞台，\n聽見世界的聲音。",
+  "back": "← 返回",
+  "back_home": "回到首頁",
+  "about_program": "節目介紹",
+  "performance_info": "演出資訊",
+  "setlist": "演出曲目",
+  "intermission": "中場休息",
+  "program_notes": "曲目解析",
+  "program_notes_hint": "點擊左右邊緣或左右滑動翻頁",
+  "performers": "演出者",
+  "performers_hint": "← 左右滑動切換 →",
+  "roster": "團員名單",
+  "nfc_cards": "本場 NFC 卡片",
+  "nfc_cards_hint": "點擊卡片，查看演出者介紹",
+  "nfc_live": "實際電子節目冊",
+  "nfc_live_open": "在新視窗開啟 ↗",
+  "font_smaller": "縮小文字",
+  "font_larger": "放大文字",
+  "conductor": "指揮",
+  "saxophone": "薩克斯風",
+  "other_programs": "其他節目",
+  "more_artists": "更多藝術家",
+  "awards": "獲獎紀錄",
+  "members": "成員",
+  "related_program": "相關演出",
+  "watch_videos": "精選影音",
+  "read_more": "閱讀全文 →",
+  "more_news": "更多消息",
+  "contact_lede": "商業合作、演出邀約、品牌代理，歡迎來信。",
+  "address": "地址",
+  "follow": "追蹤",
+  "platforms": "平台",
+  "ticket_platform": "售票平台",
+  "ec_platform": "電商平台",
+  "close": "關閉",
+  "not_found": "找不到這個頁面。",
+  "date": "演出日期",
+  "time": "演出時間",
+  "venue": "演出地點",
+  "nfc_card": "SIGHT NFC 卡片",
+  "appears_in": "出演場次",
+  "artist_page": "藝術家介紹 →",
+  "read_article": "閱讀專文 →",
+  "card_flip": "拖曳卡片可 3D 翻轉",
+  "prev_card": "上一張",
+  "next_card": "下一張",
+  "no_shows": "首次亞洲巡演，敬請期待。"
+ },
+ "home": {
+  "tour_eyebrow": "2026 SIGHT × TKWO TAIWAN TOUR",
+  "tour_title": "七個夜晚，\n一個時代的標準音。",
+  "tour_lede": "集結亞洲最具代表性及影響力的管樂團——東京佼成管樂團，攜手世界級獨奏家，於國家兩廳院與衛武營連續七場巡演。",
+  "watch_eyebrow": "WATCH & LISTEN",
+  "watch_title": "先聽，再走進音樂廳。",
+  "watch_feature": "東京佼成管樂團 × SIGHT",
+  "watch_feature_sub": "台灣地區獨家代理",
+  "artists_eyebrow": "SIGHT ARTISTS",
+  "artists_title": "站在舞台中央的人。",
+  "about_eyebrow": "ABOUT SIGHT MUSIC",
+  "about_quote": "百萬個想法，\n比不上一次實際行動。",
+  "about_text": "縱觀藝術成立於 2020 年，致力推動臺灣音樂演藝的國際化。從現場音樂錄製起步，曾受邀赴荷蘭阿姆斯特丹音樂學院錄音製作；2023 年於荷蘭設立海外分公司。2025 年起成為東京佼成管樂團台灣地區代理，並與 Nikita Zimin、松下洋、Moscow Saxophone Quartet 締結合作，同時引進 AR Resonance、STEUER、Parafit、Sengoku 等國際音樂品牌。",
+  "brands_eyebrow": "BRAND PARTNERS",
+  "news_eyebrow": "LATEST NEWS",
+  "news_title": "最新消息",
+  "marquee": [
+   "東京佼成管樂團 2026 台灣巡演",
+   "Tokyo Kosei Wind Orchestra",
+   "國家兩廳院 · 衛武營",
+   "SIGHT TKWO TAIWAN TOUR"
+  ]
+ },
+ "nfc": {
+  "eyebrow": "SIGHT NFC · DIGITAL PROGRAM",
+  "title": "輕觸，\n整場音樂會就在手上。",
+  "lede": "把節目單做成一張可以收藏的 NFC 卡片。觀眾用手機輕觸卡片，立刻打開專屬的電子節目冊——曲目解析、演出者介紹、互動卡片收藏，全部在手機上完成，斷網也能翻閱。",
+  "features": [
+   {
+    "k": "01",
+    "t": "一碰即開",
+    "d": "iPhone、Android 皆可感應，不需下載 App，不需掃 QR Code。"
+   },
+   {
+    "k": "02",
+    "t": "翻書式曲目解析",
+    "d": "像翻閱實體節目冊一樣左右翻頁，可調整字級，長輩也看得清楚。"
+   },
+   {
+    "k": "03",
+    "t": "進場斷網也能看",
+    "d": "場外開啟一次即自動離線快取，音樂廳內沒有訊號也能完整瀏覽。"
+   },
+   {
+    "k": "04",
+    "t": "3D 收藏卡",
+    "d": "每場演出專屬卡面設計，可在手機上 3D 翻轉檢視，成為值得收藏的紀念品。"
+   }
+  ],
+  "cases": "已導入場次",
+  "cases_note": "2026 東京佼成管樂團台灣巡演 — 夢行者、說書人、此岸寶島、浮生浮世",
+  "price": "價格請洽官方",
+  "price_note": "依場次規模、卡片數量與客製內容報價，歡迎音樂會主辦單位、樂團與藝術家洽詢。",
+  "cta_mail": "來信洽詢",
+  "cta_line": "LINE 洽詢",
+  "try": "試玩看看",
+  "try_hint": "點擊卡片，查看演出者介紹",
+  "demo_title": "實際案例",
+  "mail_subject": "NFC 電子節目冊洽詢"
+ },
+ "tour": {
+  "dreamwalker": {
+   "title": "夢行者",
+   "guest": "薩克斯風 齊藤健太",
+   "venue": "國家兩廳院 音樂廳",
+   "city": "台北",
+   "line": "在夢境中譜曲，在頂尖中演繹。"
+  },
+  "storyteller": {
+   "title": "說書人",
+   "guest": "指揮 侯宇彪 × 莫斯科薩克斯風四重奏",
+   "venue": "國家兩廳院 音樂廳",
+   "city": "台北",
+   "line": "一曲聲歇成往事；一聲再起續傳承。"
+  },
+  "homeshore": {
+   "title": "此岸，寶島",
+   "guest": "葉樹涵 × 薩克斯風 Nikita Zimin",
+   "venue": "衛武營 音樂廳",
+   "city": "高雄",
+   "line": "從世界響奏，在寶島傳頌。"
+  },
+  "ukiyo": {
+   "title": "浮生浮世",
+   "guest": "法國號 陳冠豪",
+   "venue": "衛武營 音樂廳",
+   "city": "高雄",
+   "line": "在繁華之中看見世界，在喧囂之中聽見自己。"
+  },
+  "myseat": {
+   "title": "席",
+   "guest": "清水大輔 × 薩克斯風 Nikita Zimin",
+   "venue": "國家兩廳院 音樂廳",
+   "city": "台北",
+   "line": "在流動的音樂中，尋一隅安放自己的席位。"
+  },
+  "gala": {
+   "title": "華麗慶典",
+   "guest": "小號 侯傳安",
+   "venue": "國家兩廳院 音樂廳",
+   "city": "台北",
+   "line": "由相聚開始，邁向下一段旅程。"
+  },
+  "finale": {
+   "title": "終章",
+   "guest": "小號 Sergei Nakariakov",
+   "venue": "衛武營 音樂廳",
+   "city": "高雄",
+   "line": "萬籟俱寂，終章即將奏鳴。"
+  }
+ },
+ "artists": {
+  "tkwo": {
+   "name": "東京佼成管樂團",
+   "from": "日本",
+   "role": "台灣地區代理",
+   "paras": [
+    "東京佼成管樂團於1960年5月以「佼成吹奏樂團」成立，1973年更名為「東京佼成管樂團」，並自2022年4月起以「一般社團法人東京佼成管樂團」名義持續運作，是日本最具代表性的職業管樂團之一。",
+    "2024年4月起，由大井剛史擔任第六任常任指揮，中橋愛生擔任樂藝員；桂冠指揮為佛瑞德里克・費奈爾，特別客席指揮為托馬斯・桑德林，首席客席指揮為飯森範親。",
+    "樂團演出曲目涵蓋吹奏樂原創作品、古典改編、流行及跨界音樂等多元風格，以卓越的音樂藝術性深受各地觀眾喜愛，並透過大量錄音與媒體演出，持續推動吹奏樂文化的提升、普及與發展。",
+    "1984年起，美國管樂教父 Frederick Fennell 出任首席指揮，樂團錄製的全國大賽課題曲成為日本與整個亞洲管樂界的參考標準。2025年起，縱觀藝術成為東京佼成管樂團台灣地區業務代理。"
+   ],
+   "awards": []
+  },
+  "matsushita": {
+   "name": "松下洋",
+   "from": "日本",
+   "role": "Jean-Marie Londeix 國際薩克斯風大賽 首獎",
+   "paras": [
+    "1987年生於橫濱的日韓混血薩克斯風演奏家。主要以獨奏家身分活躍，憑藉超凡技巧駕馭古典、爵士、搖滾、現代音樂等多樣風格的龐大曲目，獲薩克斯風大師尚-馬利・隆德士(Jean-Marie Londeix)盛讚其天賦與未來。",
+    "他以第一名畢業於洗足學園音樂大學及東京藝術大學研究所，古典演奏曾師事堺武彌、原ひとみ、原ひろし、池上政人、林田裕和、須川展也、平野公崇、宗貞啟、尚-馬利・隆德士 (Jean-Marie Londeix)、冨岡和男，爵士演奏則師事山田拓児、克里斯多夫·烏爾班斯基 (Krzysztof Urbański)、音川英二。",
+    "除了與世界各地知名管弦樂團及管樂團合作演出外，同時也積極探索薩克斯風的可能性，致力於新曲發表、開發獨特技法、復興C調旋律薩克斯風，並常與YouTuber等進行跨界合作。目前已發行兩張專輯。個人重要發行包括與Nikita Zimin的二重奏專輯(2017)及首張個人專輯《the Art of Ghibli》(2021)。其活動遍及國際，常於海外進行大師班、音樂會、錄音及擔任國際大賽評審。著作《Perfect Scale for Saxophone》系列廣受全球演奏者使用。",
+    "現任洗足學園音樂大學講師、Mouton&Company有限公司董事、亞洲薩克斯風大會評議委員，並經營展演空間「MarkⅥ mejiro」以及持續學習指揮與爵士樂。"
+   ],
+   "awards": [
+    "第一屆一宮音樂大賽 冠軍",
+    "第四屆 Jean-Marie Londeix 國際薩克斯風大賽 冠軍",
+    "第31屆日本管打樂器大賽薩克斯風組 第二名",
+    "第六屆 Adolphe Sax 國際大賽 入選準決賽",
+    "2015年度日本文化廳海外短期派遣研修員（法國波爾多）",
+    "第二屆 Frederick Fennell 國際管樂指揮大賽 入選準決賽"
+   ]
+  },
+  "nikita": {
+   "name": "Nikita Zimin",
+   "from": "俄羅斯",
+   "role": "歐亞薩克斯風協會 主席",
+   "paras": [
+    "俄羅斯當代古典薩克斯風界的重要代表人物。畢業於俄羅斯格涅辛音樂學院，師事俄羅斯古典薩克斯風名家 Margarita Shaposhnikova，後赴巴黎國立高等音樂舞蹈學院深造，師事 Claude Delangle，融合俄羅斯與法國兩大古典薩克斯風學派的養成背景。",
+    "Nikita Zimin 活躍於國際大賽舞台，2009年於德國 Aeolus 國際管樂大賽獲 Grand Prix；2010年首度挑戰 Adolphe Sax 國際薩克斯風大賽即獲第二名，並於2014年再度參賽，一舉奪下首獎，奠定其於國際古典薩克斯風樂壇的重要地位。",
+    "除獨奏舞台外，Zimin 亦長期投入薩克斯風藝術的國際交流與推廣，現為 Selmer Paris 藝術家、Moscow Saxophone Quartet 成員，並活躍於世界各地音樂節、大師班及國際賽事。"
+   ],
+   "awards": [
+    "第六屆 Adolphe Sax 國際薩克斯風大賽 首獎（2014）",
+    "第五屆 Adolphe Sax 國際薩克斯風大賽 第二名（2010）",
+    "德國 Aeolus 國際管樂大賽 Grand Prix（2009）"
+   ]
+  },
+  "msq": {
+   "name": "莫斯科薩克斯風四重奏",
+   "from": "俄羅斯",
+   "role": "當代薩克斯風重奏頂尖團隊",
+   "paras": [
+    "莫斯科薩克斯風四重奏由包含 Nikita Zimin 在內的四位頂尖國際獲獎音樂家組成。該團體融合了豐富的經驗權威與新生代的活力，展現出一種結合傳承與創新的聲音。",
+    "他們的曲目涵蓋從巴洛克到當代音樂，透過細膩的編曲與默契十足的合奏，將古典與現代作品交織重現，賦予薩克斯風嶄新的生命力。每一次登台，他們都以精緻的音色、精準的節奏與情感張力，展現俄羅斯薩克斯風藝術的最高水準。"
+   ],
+   "members": [
+    [
+     "Nikita Zimin",
+     "歐亞薩克斯風協會主席・第六屆 Adolphe Sax 國際大賽首獎（2014）"
+    ],
+    [
+     "Taras Gusarov",
+     "Imperialis Orchestra 創辦人暨藝術總監"
+    ],
+    [
+     "Sofia Petrash",
+     "Andorra SaxFest Young 大賽首獎（2024）"
+    ],
+    [
+     "Vladimir Petskus",
+     "俄羅斯總統獎助金得主・Stravinsky 國際音樂大賽首獎（2023）"
+    ]
+   ],
+   "awards": [
+    "Andorra SaxFest 2025 音樂會，安道爾拉韋利亞會議中心"
+   ]
+  },
+  "kazakov": {
+   "name": "Mikhail Kazakov",
+   "from": "俄羅斯",
+   "role": "Andorra Sax Fest 冠軍",
+   "paras": [
+    "Mikhail Kazakov（米哈伊爾·卡扎科夫）是俄羅斯古典薩克斯風演奏家，出生於葉卡捷琳堡，目前於羅馬聖切契利亞音樂學院深造。",
+    "2021 年奪下第七屆 Andorra Sax Fest 冠軍，2023 年獲得 Adolphe Sax 國際大賽季軍，並連續兩屆在 Adolphe Sax 國際大賽獲得「最佳詮釋特別獎」。年僅 20 多歲，已是當代最受矚目的青年薩克斯風演奏家之一。",
+    "師承 Nikita Zimin 的系統化薩克斯風教學，以超高難度的延伸技巧著稱，曲目橫跨浪漫樂派改編到 Colin Stetson、Barry Cockcroft 等當代作品。"
+   ],
+   "awards": [
+    "Andorra Sax Fest 冠軍（2021）",
+    "Adolphe Sax 國際大賽 季軍（2023）",
+    "Adolphe Sax 國際大賽 最佳詮釋特別獎（2019、2023）"
+   ]
+  }
+ },
+ "phases": [
+  {
+   "year": "2021",
+   "name": "Seedstone",
+   "sub": "Laying the Groundwork",
+   "text": "從幕後默默耕耘，以現場錄音奠定根基，如同原石中的種子，等待被雕琢。"
+  },
+  {
+   "year": "2023",
+   "name": "Transplant",
+   "sub": "Crossing Borders",
+   "text": "於荷蘭設立分公司，將品牌精神移植海外，帶著根基走向世界。"
+  },
+  {
+   "year": "2024",
+   "name": "Germinate",
+   "sub": "Connecting the Roots",
+   "text": "人才與資源逐漸連結，種子萌芽，為品牌生長注入活力。"
+  },
+  {
+   "year": "2025",
+   "name": "Bloomrise",
+   "sub": "The First Flourish",
+   "text": "多場音樂會成功舉辦，帶來國際注目與合作，綻放第一道光。"
+  }
+ ],
+ "news": {
+  "tkwo2026": {
+   "title": "東京佼成管樂團：一個代表時代的標準音｜SIGHT 2026 將舉辦七場巡演"
+  },
+  "kazakov": {
+   "title": "如果這是一場你從未聽過的薩克斯風獨奏？Mikhail Kazakov 首次亞洲巡演即將登台"
+  },
+  "masterclass": {
+   "title": "《雙城脈動》薩克斯風大師班，即日起開放報名！"
+  },
+  "echoes": {
+   "title": "《雙城脈動》薩克斯風音樂會正式啟售"
+  }
+ },
+ "address": "24249 新北市新莊區中平路 435 號 7 樓",
+ "copyright": "© 2026 SIGHT International 縱觀藝術"
+}

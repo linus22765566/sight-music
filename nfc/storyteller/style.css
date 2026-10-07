@@ -1,0 +1,499 @@
+:root {
+  --bg: #0d0f14;
+  --bg2: #161a22;
+  --fg: #e8e4da;
+  --muted: #9a948a;
+  --gold: #c9a86a;
+  --serif: "Yu Mincho Demibold", "YuMincho", "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif TC", serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--serif);
+  font-weight: 600; /* Yu Mincho Demibold */
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.9;
+}
+
+/* ---------- Top bar ---------- */
+#topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(13, 15, 20, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #2a2e38;
+  padding-top: env(safe-area-inset-top);
+}
+#brand {
+  display: block;
+  width: 100%;
+  padding: 11px 16px;
+  background: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  line-height: 0;
+}
+#brand img { height: 25px; filter: brightness(0) invert(1); }
+
+/* ---------- Tabs ---------- */
+#tabs {
+  position: sticky;
+  top: calc(47px + env(safe-area-inset-top));
+  z-index: 10;
+  display: flex;
+  background: var(--bg2);
+  border-bottom: 1px solid #2a2e38;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tab {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 12px 6px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.tab.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+/* ---------- Pages ---------- */
+.page { display: none; padding-bottom: 48px; }
+.page.active { display: block; animation: pageIn 0.5s ease; }
+.page.leaving { animation: pageOut 0.24s ease forwards; }
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(14px); }
+}
+@keyframes pageOut {
+  to { opacity: 0; }
+}
+
+.page h2 {
+  padding: 28px 20px 8px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+.page h2 .en {
+  display: block;
+  font-size: 12px;
+  color: var(--gold);
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+/* ---------- Home ---------- */
+.hero { position: relative; }
+.hero > img { width: 100%; display: block; }
+.hero-text {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 60px 24px 24px;
+  background: linear-gradient(transparent, rgba(13, 15, 20, 0.95));
+  text-align: center;
+}
+.hero-title {
+  width: 62%;
+  max-width: 290px;
+}
+.hero-sub {
+  font-size: 12px;
+  color: var(--gold);
+  font-style: italic;
+  letter-spacing: 0.12em;
+  margin-top: 8px;
+}
+.intro { padding: 28px 24px; text-align: center; }
+.sponsors { display: block; width: 100%; }
+.allworks {
+  margin-top: 26px;
+  font-size: clamp(10px, 3vw, 13px);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  color: var(--fg);
+}
+.quote {
+  margin-top: 10px;
+  font-size: clamp(16px, 5vw, 23px);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.showdate {
+  margin-top: 14px;
+  font-size: clamp(11px, 3.2vw, 14px);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  color: var(--muted);
+}
+.scroll-hint {
+  margin-top: 26px;
+  font-size: 10px;
+  letter-spacing: 0.35em;
+  color: var(--muted);
+}
+.scroll-hint .arrow {
+  display: block;
+  margin-top: 2px;
+  letter-spacing: 0;
+  animation: bob 1.8s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: none; }
+  50% { transform: translateY(5px); }
+}
+
+/* 回到首頁頂端：捲動離開 hero 一段距離後浮現 */
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #17191f;
+  border: none;
+  font-size: 19px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+  z-index: 15;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+.fab.show { opacity: 1; pointer-events: auto; transform: none; }
+
+/* ---------- Artist slider ---------- */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.slider::-webkit-scrollbar { display: none; }
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  padding: 16px 24px;
+  /* 垂直捲動在各 slide 內部：介紹長度不一時，換頁必定從頂部開始 */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.slide::-webkit-scrollbar { display: none; }
+.slide img {
+  width: 100%;
+  max-height: 55vh;
+  object-fit: cover;
+  object-position: center top;   /* 直式照片從頂部裁切，頭頂不被切掉 */
+  border-radius: 4px;
+  display: block;
+}
+.slide h3 {
+  margin-top: 16px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.slide .role {
+  display: block;
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+}
+.slide p { margin-top: 12px; font-size: 15px; text-align: justify; }
+.slide a { color: var(--gold); }
+
+.dots { display: flex; justify-content: center; gap: 8px; padding: 12px; }
+.dots i {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #3a3e48;
+}
+.dots i.on { background: var(--gold); }
+
+.hint {
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+/* ---------- Program book ---------- */
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 20px 0;
+}
+.font-size { display: flex; gap: 6px; }
+.font-size button {
+  padding: 7px 12px;
+  background: var(--bg2);
+  color: var(--fg);
+  border: 1px solid #2a2e38;
+  border-radius: 4px;
+  font-family: var(--serif);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.book {
+  scroll-margin-top: 110px;
+  position: relative;
+  margin: 12px 16px 0;
+  perspective: 1600px;
+  min-height: 55vh;
+}
+.book-page {
+  padding: 24px 22px 28px;
+  font-size: var(--book-font, 15px);
+  text-align: justify;
+  background: var(--bg2);
+  border: 1px solid #2a2e38;
+  border-radius: 6px;
+  min-height: 55vh;
+  transform-style: preserve-3d;
+}
+.book-page.flip-out-next { animation: flipOutN 0.18s ease-in forwards; }
+.book-page.flip-in-next { animation: flipInN 0.22s ease-out; }
+.book-page.flip-out-prev { animation: flipOutP 0.18s ease-in forwards; }
+.book-page.flip-in-prev { animation: flipInP 0.22s ease-out; }
+@keyframes flipOutN { to { transform: rotateY(-70deg); opacity: 0.2; } }
+@keyframes flipInN { from { transform: rotateY(70deg); opacity: 0.2; } }
+@keyframes flipOutP { to { transform: rotateY(70deg); opacity: 0.2; } }
+@keyframes flipInP { from { transform: rotateY(-70deg); opacity: 0.2; } }
+.book-page h3 {
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+.book-page .composer {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--gold);
+}
+.book-page .performers {
+  text-align: center;
+  /* 固定單行：協奏曲的演出者名單最長，字級隨螢幕寬度微縮以避免折行 */
+  font-size: min(2.5vw, 12.8px);
+  white-space: nowrap;
+  color: var(--muted);
+  margin: 8px 0 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #2a2e38;
+}
+.book-page p + p { margin-top: 0.9em; }
+.book-page.intermission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-size: 22px;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+}
+
+.book-nav {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 22%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.book-nav.prev { left: 0; }
+.book-nav.next { right: 0; }
+
+.book-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ---------- TOUCH / Brand ---------- */
+.full-img { width: 100%; display: block; margin-top: 8px; }
+.body-text { padding: 8px 24px; font-size: 15px; }
+#page-touch .quote { margin-top: 16px; }
+#page-touch .body-text { text-align: center; }
+
+.brand-text {
+  padding: 8px 24px 16px;
+  font-size: 15px;
+  text-align: justify;
+}
+.brand-text p + p { margin-top: 0.9em; }
+.brand-logo {
+  display: block;
+  height: 30px;
+  margin: 28px auto 4px;
+  filter: brightness(0) invert(1);   /* 與 top bar 一致的白色 logo */
+}
+/* NFC 卡片輪播：JS 自動推進，使用者可隨時手動左右滑，點擊開啟 3D 檢視 */
+.carousel {
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 30px 0 16px;
+}
+.carousel + .carousel { padding-top: 6px; }
+.carousel::-webkit-scrollbar { display: none; }
+.car-track {
+  display: flex;
+  width: max-content;
+}
+.car-track img {
+  height: 44vh;
+  max-height: 380px;
+  margin-right: 22px;
+  border-radius: 10px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+/* 3D 卡片檢視器 */
+.viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.92);
+  display: grid;
+  place-items: center;
+  animation: fadeIn 0.25s ease;
+}
+.viewer[hidden] { display: none; }
+@keyframes fadeIn { from { opacity: 0; } }
+.viewer-backdrop { position: absolute; inset: 0; }
+.viewer-stage { position: relative; z-index: 1; perspective: 1500px; }
+.card3d {
+  position: relative;
+  width: 74vw;
+  max-width: 330px;
+  aspect-ratio: 479 / 760;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  cursor: grab;
+  touch-action: none;
+  --t: 3px;    /* 卡片厚度：貼近實體卡片比例 */
+  --r: 12px;   /* 需與 .face 的 border-radius 一致 */
+  --metal: linear-gradient(115deg,
+    #6f5d3e 0%, #cdb684 18%, #f7efd8 38%,
+    #a8905f 55%, #e8d9ae 75%, #71603f 100%);   /* 金屬側邊 */
+}
+.card3d:active { cursor: grabbing; }
+.card3d .face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--r);
+  backface-visibility: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+}
+.card3d .front { transform: translateZ(calc(var(--t) / 2)); }
+.card3d .back { transform: rotateY(180deg) translateZ(calc(var(--t) / 2)); }
+/* 卡片厚度：一疊與卡面同圓角的薄層，堆疊輪廓即圓角薄板，四角天生密合 */
+.card3d .ply {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r);
+  background: var(--metal);
+  transform: translateZ(calc(var(--t) * var(--i)));
+}
+.viewer-close {
+  position: absolute;
+  top: calc(16px + env(safe-area-inset-top));
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+}
+.viewer-hint {
+  position: absolute;
+  bottom: calc(28px + env(safe-area-inset-bottom));
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  pointer-events: none;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+.social a {
+  width: 52px;
+  height: 52px;
+  background: #f5f2ea;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+.social svg {
+  width: 30px;
+  height: 30px;
+  fill: #17191f;
+}
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 10px;
+  color: #555a64;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 700px) {
+  main { max-width: 640px; margin: 0 auto; }
+}
+
+/* 團員名單 */
+.roster { margin-top: 20px; border-top: 1px solid #2a2e38; padding-top: 14px; }
+.roster-title { font-size: 15px; letter-spacing: 0.25em; color: var(--gold); }
+.roster p { display: flex; gap: 10px; margin-top: 3px; font-size: 13px; text-align: left; line-height: 1.75; }
+.roster span { flex: 0 0 72px; color: var(--muted); }
+.roster-note { color: var(--muted); font-size: 12px; }
+
+/* 售票導連 */
+.ticket-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 12px 36px;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  font-size: 15px;
+}
+
+/* 公司簡介小節 */
+.brand-sub { margin-top: 1.5em; color: var(--gold); letter-spacing: 0.25em; }
+.brand-events { text-align: left; }
